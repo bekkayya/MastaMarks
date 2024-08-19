@@ -1,6 +1,9 @@
 # MastaMarks
 sync mastadon bookmarks to firefox
 
+![picture of a user interface with toggles, dropdowns, a timer, and buttons](https://github.com/bekkayya/MastaMarks/blob/main/interface_example.png)
+
+
 ### Setup
 1. install by local build, repo clone, or on the firefox store
 2. navigate to manage extensions -> mastamarks -> preferences
