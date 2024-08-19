@@ -1,0 +1,33 @@
+{
+    "manifest_version": 2,
+    "name": "MastaMarks",
+    "version": "1.0",
+    "description": "retrieve mastadon bookmarks via the API & import them into firefox",
+    "permissions": [
+        "bookmarks",
+        "storage",
+        "notifications",
+        "alarms"
+    ],
+    "icons": {
+        "621": "icon.png"
+      },
+    "options_ui": {
+      "page": "options.html"
+    },
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "mastamarks@example.org",
+        "strict_min_version": "79.0"
+      }
+    }
+    
+  }

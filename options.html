@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background-color: #f2e8ff; /* light purple background */
+        font-family: Arial, sans-serif;
+      }
+      button {
+        margin: 5px;
+        padding: 8px 16px;
+        border: none;
+        background-color: #800080; /* purple button color */
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #4b0082; /* darker purple on hover */
+      }
+      .disabled-button {
+        opacity: 0.5; /* reduce opacity to visually gray out */
+        cursor: not-allowed; /* change cursor to not-allowed */
+      }
+      select {
+        width: 100%;
+        height: 30px;
+        margin-bottom: 10px;
+      }
+      input[type="checkbox"] {
+        margin-right: 5px;
+      }
+      label {
+        color: #800080; /* purple label color */
+      }
+      #textbox1 {
+        width: 625px; 
+        height: 200px; 
+        resize: none;
+        user-select: text; 
+      }
+      #textbox2 {
+        width: 625px; 
+        height: 100px; 
+        resize: none;
+        user-select: text; 
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+        <button id="button1">Clear Local Cache</button>
+        <br>
+        <label for="textbox1">(json) Authorized Instances</label>
+        <br>
+        <textarea id="textbox1" name="textbox1"></textarea>
+        <br>
+        <label for="textbox2">(json) Automatic Import Timer</label>
+        <br>
+        <textarea id="textbox2" name="textbox2"></textarea>
+    </form>
+    <script src="options.js"></script>
+  </body>
+</html>
